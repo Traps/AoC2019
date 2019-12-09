@@ -1,6 +1,6 @@
 def run_intcode(intcode):
-    for i_position in range(0, len(intcode), 4):
-        op, i_r1, i_r2, i_w = intcode[i_position:(i_position+4)]
+    for i_pointer in range(0, len(intcode), 4):
+        op, i_r1, i_r2, i_w = intcode[i_pointer:(i_pointer+4)]
 
         if op == 99:
             return intcode[0]
