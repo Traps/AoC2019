@@ -1,6 +1,6 @@
 from math import floor
 
-input_file = open('D01/d01.input', 'r')
+input_file = open('D01/.input', 'r')
 
 input_text = input_file.read()
 
