@@ -37,4 +37,3 @@ part1 = [p for p in path1 if p not in path2]
 part2 = [p for p in path2 if p not in path1]
 
 print('Number of orbit transfers from YOU to SAN:', len(part1) + len(part2) - 2)
-
