@@ -33,16 +33,8 @@ for rs in resolved_structures:
     elif rs[-1] == goal:
         path2 = rs
 
-for planet in path1[::-1]:
-    if planet in path2:
-        print(planet)
-        break
+part1 = [p for p in path1 if p not in path2]
+part2 = [p for p in path2 if p not in path1]
 
-n_steps = len(path1) + len(path2) - len(set(path1 + path2)) - 2
-print(n_steps)
+print('Number of orbit transfers from YOU to SAN:', len(part1) + len(part2) - 2)
 
-print(len(path1),len(set(path1)))
-print(len(path2))
-print(path1.index(planet))
-print(path2.index(planet))
-print(len(set(path1 + path2)))
